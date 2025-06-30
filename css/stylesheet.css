@@ -1,0 +1,21 @@
+strong {
+  display: block;
+}
+
+.selDiv {
+  display: flex;
+  gap: 8px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  li {
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #ccc;
+  }
+  img {
+    background: url(../image/noImage.jpeg) no-repeat;
+  }
+}

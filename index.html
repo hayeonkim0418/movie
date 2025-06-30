@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화검색서비스</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <script type="module" src="./js/global.js"></script>
+  </head>
+  <body>
+    <!-- 1633c414 -->
+    <form id="search">
+      <fieldset>
+        <legend>제목</legend>
+        <div class="selDiv">
+          <div class="selectType">
+            <select name="" id="">
+              <option value="movie">movie</option>
+              <option value="series">series</option>
+              <option value="episode">episode</option>
+            </select>
+          </div>
+          <input class="dateSch" type="number" min="1990" max="2027" />
+          <div class="searchDiv">
+            <input type="search" name="" id="" />
+            <button>검색</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <ul class="movie-list"></ul>
+  </body>
+</html>
