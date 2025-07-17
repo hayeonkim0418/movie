@@ -12,12 +12,14 @@
 
 /* --------------------------------------------- */
 import { Loading } from "./Loading.js";
+import { ClickEvent } from "./ClickEvent.js";
 import { GetMovieData } from "./GetMovieData.js";
 import { MovieSearch } from "./MovieSearch.js";
 import { LINK } from "./LINK.js";
 import { ANI } from "./ANI.js";
 
 Loading();
+ClickEvent();
 GetMovieData();
 MovieSearch();
 LINK().then(() => {
