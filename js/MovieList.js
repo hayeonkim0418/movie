@@ -13,6 +13,7 @@ export const MovieList = (array) => {
       .map(({ Poster, Title, imdbID }) => {
         return `
          <li>
+          <span class="like-chk"></span>
           <a href="./detail.html?id=${imdbID}" target="_blank">
             <img src=${Poster === "N/A" ? "./image/noImage.png" : Poster}>
             <p class="movie-title">${Title}</p>

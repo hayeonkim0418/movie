@@ -8,9 +8,9 @@ export const MovieSearch = () => {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    const selectType = document.querySelector(".selectType select").value;
-    const searchName = document.querySelector(".searchDiv input").value;
-    const searchDate = document.querySelector(".dateSch input").value;
+    const selectType = document.querySelector(".select-type select").value;
+    const searchName = document.querySelector(".search-div input").value;
+    const searchDate = document.querySelector(".date-sch input").value;
     // console.log(selectType);
     // console.log(searchDate);
     // console.log(searchName);
