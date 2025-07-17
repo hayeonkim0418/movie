@@ -20,7 +20,7 @@ export const ANI = () => {
   timeline.from(".movie-details .basic-info p", {
     opacity: 0,
     y: -50,
-    stagger: 0.3,
+    // stagger: 0.3,
   });
   timeline.from(".movie-details .plot strong", {
     opacity: 0,
@@ -37,7 +37,7 @@ export const ANI = () => {
   timeline.from(".movie-details .cast p", {
     opacity: 0,
     y: -50,
-    stagger: 0.3,
+    // stagger: 0.3,
   });
 
   gsap.registerPlugin(ScrollSmoother);
