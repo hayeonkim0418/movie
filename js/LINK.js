@@ -6,7 +6,7 @@ export const LINK = async () => {
   console.log(imdbId);
 
   try {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=1633c414&i=${imdbId}&plot=full`);
+    const response = await fetch(`https://www.omdbapi.com/?apikey=1633c414&i=${imdbId}&plot=full`);
     const result = await response.json();
     console.log(result);
     const detailList = document.querySelector(".movie-details");
