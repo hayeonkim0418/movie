@@ -1,7 +1,6 @@
-export const ClickEvent = () => {
+export const SearchClickEvent = () => {
   const searchIcon = document.querySelector(".m-search");
   const selctBox = document.querySelector(".sel-div");
-  // const likeChk = document.querySelector(".like-chk");
 
   if (!searchIcon || !selctBox) return;
 
@@ -9,10 +8,4 @@ export const ClickEvent = () => {
     selctBox.classList.toggle("active");
     searchIcon.classList.toggle("active");
   });
-
-  // likeChk.addEventListener("click", () => {
-  //   console.log(".");
-
-  //   likeChk.classList.add("active");
-  // });
 };

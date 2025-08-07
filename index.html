@@ -4,78 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACHA MOVIES</title>
-    <!-- GSAP CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
-    <!-- //GSAP CDN -->
     <link rel="stylesheet" href="./css/stylesheet.css" />
     <script type="module" src="./js/global.js"></script>
   </head>
   <body>
-    <!-- 1633c414 -->
-    <div class="loading">
-      <div class="spinner"></div>
-    </div>
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <div class="container">
-          <header class="header">
-            <a href="index.html">
-              <h1><img src="./image/logo.png" alt="ACHA MOVIES" /><span class="pc">ACHA MOVIES</span></h1>
-            </a>
-            <div class="form">
-              <form id="search" class="search-form">
-                <fieldset>
-                  <legend>제목</legend>
-                  <div class="s-box">
-                    <div class="m-search mobile"></div>
-                    <div class="sel-div">
-                      <div class="select-type">
-                        <label for="movieType" class="a11y-hidden">유형</label>
-                        <select name="" id="movieType">
-                          <option value="movie">movie</option>
-                          <option value="series">series</option>
-                          <option value="episode">episode</option>
-                        </select>
-                      </div>
-                      <div class="date-sch">
-                        <label for="releaseYear" class="a11y-hidden">개봉 연도</label>
-                        <input type="number" id="releaseYear" placeholder="연도 (YYYY)" min="1900" max="2099" />
-                      </div>
-                      <div class="search-div">
-                        <input type="text" name="" id="" placeholder="영화 제목을 검색하세요." />
-                        <button class="pc" type="submit">검색</button>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-              </form>
+    <div class="container">
+      <header class="header-container">
+        <!-- include -->
+      </header>
+      <main class="main mt44">
+        <section class="movie-visual-section">
+          <div class="visual">
+            <img src="./image/visual_bg.png" alt="" />
+            <div class="visual-txt">
+              <p>ACHA MOVIES</p>
+              <span>enjoy watching</span>
             </div>
-            <div class="like">
-              <a href="#"><span class="a11y-hidden">즐겨찾기 목록</span></a>
-            </div>
-          </header>
-          <main class="main">
-            <!-- <section class="search-section"></section> -->
-            <section class="movie-results-section">
-              <!-- <h2 class="results-heading">검색 결과</h2> -->
-              <ul class="movie-list"></ul>
-            </section>
-          </main>
-          <footer class="footer">
-            <div class="f-logo">
-              <img src="./image/logo.png" alt="ACHA MOVIES" />
-              <span>ACHA MOVIES</span>
-            </div>
-            <ul class="copywriter">
-              <li>ACHA MOVIES(주) | 대표이사 : 김아차</li>
-              <li>서울시 강남구 역삼로</li>
-              <li>고객센터 : 2018-0303</li>
-            </ul>
-          </footer>
-        </div>
-      </div>
+          </div>
+        </section>
+        <!-- <section class="search-section"></section> -->
+        <section class="movie-results-section">
+          <!-- <h2 class="results-heading">검색 결과</h2> -->
+          <ul class="movie-list"></ul>
+        </section>
+      </main>
+      <footer class="footer-container">
+        <!-- include -->
+      </footer>
     </div>
   </body>
 </html>

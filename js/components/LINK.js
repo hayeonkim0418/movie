@@ -1,14 +1,12 @@
-// import { DetailsList } from "./DetailsList.js";
-
 export const LINK = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const imdbId = urlParams.get("id");
-  console.log(imdbId);
+  // console.log(imdbId);
 
   try {
     const response = await fetch(`https://www.omdbapi.com/?apikey=1633c414&i=${imdbId}&plot=full`);
     const result = await response.json();
-    console.log(result);
+    // console.log(result);
     const detailList = document.querySelector(".movie-details");
 
     if (!detailList) return;
@@ -42,6 +40,6 @@ export const LINK = async () => {
     </li>
     `;
   } catch (error) {
-    console.log(error);
+    alert(error);
   }
 };

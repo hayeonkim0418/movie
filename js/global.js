@@ -1,27 +1,11 @@
-// import { GetMovie } from "./GetMovie.js";
-// import { GetMovie } from "./GetMovie.js";
-// import { GetMovie2 } from "./GetMovie2.js";
-// import { RenderList } from "./RenderList.js";
-// import { Search } from "./Search.js";
-// import { Search2 } from "./Search2.js";
-// GetMovie();
-// RenderList();
-// Search();
-// GetMovie2();
-// Search2();
+import { Loading } from "./utils/Loading.js";
+import { Header } from "./components/Header.js";
+import { Footer } from "./components/Footer.js";
+import { GetMovieData } from "./components/GetMovieData.js";
+import { LINK } from "./components/LINK.js";
 
-/* --------------------------------------------- */
-import { Loading } from "./Loading.js";
-import { ClickEvent } from "./ClickEvent.js";
-import { GetMovieData } from "./GetMovieData.js";
-import { MovieSearch } from "./MovieSearch.js";
-import { LINK } from "./LINK.js";
-import { ANI } from "./ANI.js";
-
+Header();
+Footer();
 Loading();
-ClickEvent();
 GetMovieData();
-MovieSearch();
-LINK().then(() => {
-  ANI();
-});
+LINK();
