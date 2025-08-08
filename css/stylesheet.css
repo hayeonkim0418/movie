@@ -236,16 +236,36 @@ select {
       position: absolute;
       top: 11rem;
       left: 7rem;
+      @media (max-width: 768px) {
+        top: 7rem;
+        left: 4rem;
+      }
+      @media (max-width: 420px) {
+        top: 4rem;
+      }
       p {
         padding-bottom: 1.5rem;
         font-size: 6rem;
         font-weight: bold;
         letter-spacing: 0.5rem;
+        @media (max-width: 768px) {
+          font-size: 5rem;
+        }
+        @media (max-width: 420px) {
+          font-size: 4rem;
+        }
       }
       span {
         font-size: 4rem;
         letter-spacing: 2.3rem;
         color: var(--whitefd);
+        @media (max-width: 768px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+        @media (max-width: 420px) {
+          font-size: 2.5rem;
+        }
       }
     }
   }
